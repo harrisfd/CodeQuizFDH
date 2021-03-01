@@ -33,15 +33,15 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 30px;
-    margin: 20px 0;
+    margin: 20px;
 }
 .btn {
-    --hue: var(--hue-neutral);
-    border: 1px solid hsl(var(--hue), 100%, 30%);
-    background-color: hsl(var(--hue), 100%, 50%);
+    border: 1px solid hsl(200, 100%, 30%);
+    background-color: hsl (200,100%, 50%);
     border-radius: 5px;
     padding: 5px 10px;
     color: black;
+    outline: none;
 }
 
 btn:hover {
