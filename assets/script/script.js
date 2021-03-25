@@ -1,7 +1,7 @@
 const startButton = document.getElementById('start-btn')
 const questionContainerElement = document.getElementById('question-container')
-const questionContainerElement = document.getElementById('question')
-const answersButtonsElement = document.getElementById('answers-buttons')
+const answersButtonsElement = document.getElementById('answer-buttons')
+const questionel = document.getElementById("question")
 let shuffleQuestions, currentQuestionIndex
 
 function startGame() {
@@ -12,20 +12,17 @@ function startGame() {
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
 }
-function startGame() {
-
-}
-
 function setNextQuestion() {
-    showQuestion(shuffled[currentQuestionIndex])
+    showQuestion(shuffledQuestions[currentQuestionIndex])
 
 }
 
 function showQuestion(question) {
-    questionContainerElement.innerText = question.question
+    questionel.innerText = question.question
     question.answers.forEach(answer => {
         const button = document.createElement('button')
-        button.innerText = answer.textbutton.classList.add('btn')
+        button.innerText = answer.text
+        button.classList.add('btn')
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
@@ -36,7 +33,7 @@ function showQuestion(question) {
 }
 
 function selectAnswer() {
-
+console.log("answerbuttonwasclicked")
 }
 const questions = [
     {
@@ -47,3 +44,7 @@ const questions = [
         ]
     }
 ]
+
+
+
+startButton.addEventListener("click", startGame)
