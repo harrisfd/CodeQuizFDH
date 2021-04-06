@@ -56,7 +56,7 @@ function selectAnswer(event) {
     var correct = event.target.getAttribute("data-correct")
 
     if (!correct) {
-        timeleft -= 5
+        timeleft -= 10
     }
 
 
