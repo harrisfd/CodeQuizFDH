@@ -16,7 +16,7 @@ Deployed application:
 https://harrisfd.github.io/codequizFDH/
 ## Usage
 
-<img src="./Assets/images/Code Quiz FH.jpg" alt="JPG of the application"/>
+<img src="./assets/images/CodeQuizFH.jpg" alt="JPG of the application"/>
 
 This is a timed quiz with multiple choice questions on Javascript.  This app is using HTML, CSS, Bootstrap, and JavaScript. User taking the quiz will have 60 seconds to complete. For each question answered incorrectly, the timer will subtract 10 seconds. Once the timer reaches zero then the quiz is over. Users can save their initials and score.  A list of high scores will be listed once they click “ view high scores”.
 
