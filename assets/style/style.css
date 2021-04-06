@@ -22,15 +22,22 @@ body {
     justify-content: center;
     align-items: center;
 }
+.contents {
+    display: flex;
+    flex-direction: column;
+}
 .container {
     
     width: 800px;
     max-width: 80%;
+    margin-top: 35px;
     background-color:bisque;
     border-radius: 5px;
-    padding: 30px;
+    padding: 60px;
     box-shadow: 0 0 10px 2px;
+    
 }
+
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -72,4 +79,7 @@ btn:hover {
 .hide {
     display: none;
 
+}
+.navbar-container {
+    max-width: none;
 }
